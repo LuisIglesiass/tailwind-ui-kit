@@ -31,12 +31,10 @@ function ComponentCard({ title, preview, code }) {
       </header>
 
       <div className="p-5">
-        {/* Preview */}
         <div className="bg-gray-50 rounded-lg p-5 grid place-items-center min-h-28">
           {preview}
         </div>
 
-        {/* Code */}
         <pre className="mt-4 text-xs bg-gray-900 text-gray-100 rounded-lg p-4 overflow-x-auto">
           <code>{code}</code>
         </pre>
