@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 
-/* Botón reutilizable con feedback de copiado */
 function CopyButton({ code }) {
   const [copied, setCopied] = useState(false);
   const onCopy = async () => {
@@ -37,7 +36,7 @@ function ComponentCard({ title, preview, code }) {
           {preview}
         </div>
 
-        {/* Código en bloque (solo visual) */}
+        {/* Code */}
         <pre className="mt-4 text-xs bg-gray-900 text-gray-100 rounded-lg p-4 overflow-x-auto">
           <code>{code}</code>
         </pre>
@@ -50,7 +49,6 @@ export default function ComponentsView() {
   // Modal demo state
   const [open, setOpen] = useState(false);
 
-  // Cerrar con ESC
   useEffect(() => {
     const onKey = (e) => e.key === "Escape" && setOpen(false);
     window.addEventListener("keydown", onKey);
@@ -323,7 +321,6 @@ const alertPreview = (
         <ComponentCard title="KPI / Stats"    preview={statsPreview} code={statsCode} />
       </div>
 
-      {/* Modal real (para la demo del preview) */}
       {open && (
         <div aria-modal="true" role="dialog" className="fixed inset-0 z-50 grid place-items-center" onClick={() => setOpen(false)}>
           <div className="absolute inset-0 bg-black/50" />

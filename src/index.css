@@ -1,11 +1,9 @@
 @import "tailwindcss";
 
-/* ===== Scroll suave ===== */
 html {
   scroll-behavior: smooth;
 }
 
-/* ===== Animaciones suaves ===== */
 @keyframes fade-in {
   from {
     opacity: 0;
@@ -33,7 +31,6 @@ html {
   }
 }
 
-/* Utilidades (clases pequeñas) */
 .animate-fade-up {
   animation: fade-in 0.6s ease-out forwards, slide-up 0.6s ease-out forwards;
 }
