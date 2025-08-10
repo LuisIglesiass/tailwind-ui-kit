@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 
-/* Botón reutilizable con feedback de copiado */
 function CopyButton({ code }) {
   const [copied, setCopied] = useState(false);
   const onCopy = async () => {
@@ -32,12 +31,10 @@ function ComponentCard({ title, preview, code }) {
       </header>
 
       <div className="p-5">
-        {/* Preview */}
         <div className="bg-gray-50 rounded-lg p-5 grid place-items-center min-h-28">
           {preview}
         </div>
 
-        {/* Código en bloque (solo visual) */}
         <pre className="mt-4 text-xs bg-gray-900 text-gray-100 rounded-lg p-4 overflow-x-auto">
           <code>{code}</code>
         </pre>
@@ -47,17 +44,14 @@ function ComponentCard({ title, preview, code }) {
 }
 
 export default function ComponentsView() {
-  // Modal demo state
   const [open, setOpen] = useState(false);
 
-  // Cerrar con ESC
   useEffect(() => {
     const onKey = (e) => e.key === "Escape" && setOpen(false);
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
   }, []);
 
-  /* --- Snippets (previews + code strings) --- */
 
   const primaryBtn = (
     <button className="px-4 py-2 bg-indigo-600 text-white rounded-lg shadow hover:bg-indigo-700 transition">
@@ -323,7 +317,6 @@ const alertPreview = (
         <ComponentCard title="KPI / Stats"    preview={statsPreview} code={statsCode} />
       </div>
 
-      {/* Modal real (para la demo del preview) */}
       {open && (
         <div aria-modal="true" role="dialog" className="fixed inset-0 z-50 grid place-items-center" onClick={() => setOpen(false)}>
           <div className="absolute inset-0 bg-black/50" />
