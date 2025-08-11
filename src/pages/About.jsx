@@ -5,7 +5,6 @@ export default function About() {
 	  <main className="min-h-screen bg-secondary">
 		<Navbar/>
 		<section className="max-w-5xl mx-auto px-4 py-16">
-		  {/* Intro */}
 		  <header className="mb-12 text-center">
 			<h1 className="text-3xl md:text-4xl font-extrabold text-gray-900">
 			  About <span className="text-primary">Luis Iglesias</span>
@@ -18,7 +17,6 @@ export default function About() {
   
 		  {/* Hero: text + photo */}
 		  <div className="grid md:grid-cols-2 gap-8 items-center">
-			{/* Text */}
 			<div className="space-y-6">
 			  <div className="rounded-2xl bg-white/80 backdrop-blur shadow p-6 border border-indigo-50">
 				<h2 className="text-xl font-semibold text-gray-900">What I do</h2>
@@ -27,7 +25,6 @@ export default function About() {
 				  Clean code, solid patterns, and small, frequent deliveries.
 				</p>
   
-				{/* CTA */}
 				<div className="mt-5 flex flex-wrap gap-3">
 				  <a
 					href="mailto:lluis.igl3sias@gmail.com"
@@ -46,7 +43,6 @@ export default function About() {
 				</div>
 			  </div>
   
-			  {/* Tech chips */}
 				<div className="flex flex-wrap gap-2">
 				{[
 					"React",
@@ -69,7 +65,6 @@ export default function About() {
 				</div>
 			</div>
   
-			{/* Profile – card */}
 			<div className="relative">
 			  <div className="rounded-3xl bg-white shadow-lg border border-indigo-50 p-3">
 				<div className="rounded-2xl overflow-hidden bg-gradient-to-b from-indigo-50 to-white">
@@ -85,7 +80,6 @@ export default function About() {
 			</div>
 		  </div>
   
-		  {/* Skills */}
 		  <div className="mt-12 grid md:grid-cols-3 gap-6">
 			<article className="rounded-2xl bg-white shadow p-6 border border-gray-100">
 			  <div className="text-2xl">🧩</div>
@@ -115,7 +109,6 @@ export default function About() {
 			</article>
 		  </div>
   
-		  {/* Footer mini */}
 		  <div className="mt-12 text-center text-sm text-gray-500">
 			Based in Hamburg, DE • Open to remote or hybrid opportunities
 		  </div>

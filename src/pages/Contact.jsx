@@ -8,7 +8,6 @@ export default function Contact() {
 		<h1 className="text-3xl font-bold mb-8">Contact</h1>
   
 		<div className="grid gap-8 md:grid-cols-2">
-		  {/* Info Card */}
 		  <div className="bg-white shadow rounded-xl p-6 border border-gray-100">
 			<h2 className="text-xl font-semibold mb-4">Get in Touch</h2>
 			<p className="text-gray-600 mb-6">
@@ -49,7 +48,6 @@ export default function Contact() {
 			</ul>
 		  </div>
   
-		  {/* Decorative image / illustration */}
 		  <div className="bg-gradient-to-br from-indigo-50 to-indigo-100 rounded-xl flex items-center justify-center p-6">
 			<img
 			  src="/profilepic-profesional.jpeg"

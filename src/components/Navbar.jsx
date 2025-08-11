@@ -9,14 +9,12 @@ export default function Navbar() {
 				<div className="flex justify-between items-center">
 					<div className="text-xl font-bold text-indigo-600">MyUIkit</div>
 					
-					{/* Desktop Menu */}
 					<div className="hidden md:flex gap-6 text-sm font-medium text-gray-600">
 						<a href="/" className="hover:text-indigo-600 transition">Home</a>
 						<a href="/about" className="hover:text-indigo-600 transition">About</a>
 						<a href="/contact" className="hover:text-indigo-600 transition">Contact</a>
 					</div>
 
-					{/* Mobile Menu Button */}
 					<button
 						onClick={() => setIsMenuOpen(!isMenuOpen)}
 						className="md:hidden p-2 rounded-md text-gray-600 hover:text-indigo-600 hover:bg-gray-100 transition"
@@ -32,7 +30,6 @@ export default function Navbar() {
 					</button>
 				</div>
 
-				{/* Mobile Menu */}
 				{isMenuOpen && (
 					<div className="md:hidden mt-3 pb-3 border-t border-gray-200">
 						<div className="flex flex-col gap-3 pt-3">

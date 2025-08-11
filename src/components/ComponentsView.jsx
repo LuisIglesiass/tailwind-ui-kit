@@ -35,6 +35,7 @@ function ComponentCard({ title, preview, code }) {
           {preview}
         </div>
 
+        {/* Code */}
         <pre className="mt-4 text-xs bg-gray-900 text-gray-100 rounded-lg p-4 overflow-x-auto">
           <code>{code}</code>
         </pre>
@@ -44,7 +45,6 @@ function ComponentCard({ title, preview, code }) {
 }
 
 export default function ComponentsView() {
-  // Modal demo state
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
@@ -53,7 +53,7 @@ export default function ComponentsView() {
     return () => window.removeEventListener("keydown", onKey);
   }, []);
 
-  /* --- Snippets (previews + code strings) --- */
+
 
   const primaryBtn = (
     <button className="px-4 py-2 bg-indigo-600 text-white rounded-lg shadow hover:bg-indigo-700 transition">
