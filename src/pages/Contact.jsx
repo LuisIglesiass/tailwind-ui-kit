@@ -50,7 +50,7 @@ export default function Contact() {
   
 		  <div className="bg-gradient-to-br from-indigo-50 to-indigo-100 rounded-xl flex items-center justify-center p-6">
 			<img
-			  src="/profilepic-profesional.jpeg"
+			  src="/profilepic.JPG"
 			  alt="Contact Illustration"
 			  className="max-w-xs w-full"
 			/>
